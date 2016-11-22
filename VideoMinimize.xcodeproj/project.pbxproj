@@ -12,6 +12,7 @@
 		9177C7361DE4DF00007F4FA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9177C7341DE4DF00007F4FA1 /* Main.storyboard */; };
 		9177C7381DE4DF00007F4FA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9177C7371DE4DF00007F4FA1 /* Assets.xcassets */; };
 		9177C73B1DE4DF00007F4FA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9177C7391DE4DF00007F4FA1 /* LaunchScreen.storyboard */; };
+		9177C7441DE4DF8D007F4FA1 /* beach.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9177C7431DE4DF8D007F4FA1 /* beach.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9177C7371DE4DF00007F4FA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9177C73A1DE4DF00007F4FA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9177C73C1DE4DF00007F4FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9177C7431DE4DF8D007F4FA1 /* beach.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = beach.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +61,18 @@
 				9177C7341DE4DF00007F4FA1 /* Main.storyboard */,
 				9177C7371DE4DF00007F4FA1 /* Assets.xcassets */,
 				9177C7391DE4DF00007F4FA1 /* LaunchScreen.storyboard */,
-				9177C73C1DE4DF00007F4FA1 /* Info.plist */,
+				9177C7421DE4DF57007F4FA1 /* Supporting Files */,
 			);
 			path = VideoMinimize;
+			sourceTree = "<group>";
+		};
+		9177C7421DE4DF57007F4FA1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9177C7431DE4DF8D007F4FA1 /* beach.mp4 */,
+				9177C73C1DE4DF00007F4FA1 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +137,7 @@
 				9177C73B1DE4DF00007F4FA1 /* LaunchScreen.storyboard in Resources */,
 				9177C7381DE4DF00007F4FA1 /* Assets.xcassets in Resources */,
 				9177C7361DE4DF00007F4FA1 /* Main.storyboard in Resources */,
+				9177C7441DE4DF8D007F4FA1 /* beach.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
