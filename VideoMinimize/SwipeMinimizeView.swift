@@ -10,6 +10,12 @@ import UIKit
 
 class SwipeMinimizeView: UIView {
     
+    var startingCenter: CGPoint?
+    var finalCenter: CGPoint?
+    var startingSize: CGSize?
+    var finalSize: CGSize?
+    let aspectRatio: CGFloat = 0.5625
+    
     // Called when making view programmatically
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -30,6 +36,15 @@ class SwipeMinimizeView: UIView {
     
     func handlePanning() {
         
+    }
+    
+    func configureSizeAndPosition(_ parentViewFrame: CGRect) {
+        
+        self.startingCenter = self.center
+        self.finalCenter = CGPoint(x: parentViewFrame.size.width - parentViewFrame.size.width/4, y: parentViewFrame.size.height - (self.frame.size.height/4) - 2)
+        
+        startingSize = self.frame.size
+        finalSize = CGSize(width: parentViewFrame.size.width/2 - 10, height: (parentViewFrame.size.width/2 - 10) * aspectRatio)
     }
 }
 
