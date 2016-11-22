@@ -10,9 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var swipeMinimizeView: SwipeMinimizeView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        swipeMinimizeView.configureSizeAndPosition(self.view.frame)
     }
 
     override func didReceiveMemoryWarning() {

@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view hidden="YES" alpha="0.0" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Ww-Co-gp9">
+                            <view hidden="YES" alpha="0.0" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Ww-Co-gp9" customClass="SwipeMinimizeView" customModule="VideoMinimize" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="64" width="414" height="233"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -39,6 +39,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="VideoMinimizeDemo" id="61N-Eg-7M7"/>
+                    <connections>
+                        <outlet property="swipeMinimizeView" destination="2Ww-Co-gp9" id="vlk-4D-DEI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

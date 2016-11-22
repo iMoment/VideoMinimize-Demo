@@ -16,6 +16,10 @@ class SwipeMinimizeView: UIView {
     var finalSize: CGSize?
     let aspectRatio: CGFloat = 0.5625
     
+    var rangeTotal: CGFloat!
+    var widthRange: CGFloat!
+    var centerXRange: CGFloat!
+    
     // Called when making view programmatically
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -45,6 +49,11 @@ class SwipeMinimizeView: UIView {
         
         startingSize = self.frame.size
         finalSize = CGSize(width: parentViewFrame.size.width/2 - 10, height: (parentViewFrame.size.width/2 - 10) * aspectRatio)
+        
+        // Set common range totals once
+        rangeTotal = finalCenter!.y - startingCenter!.y
+        widthRange = startingSize!.width - finalSize!.width
+        centerXRange = finalCenter!.x - startingCenter!.x
     }
 }
 
